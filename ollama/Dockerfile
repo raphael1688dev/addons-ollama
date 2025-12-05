@@ -11,7 +11,7 @@ RUN chmod +x /usr/local/bin/run.sh
 COPY webui /usr/share/ollama/webui
 
 # Expose the static port
-EXPOSE 11434
+EXPOSE 11434 11435
 
 # Set the default entrypoint to the run.sh script
 ENTRYPOINT ["/usr/local/bin/run.sh"]
