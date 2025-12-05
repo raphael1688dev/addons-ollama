@@ -16,7 +16,7 @@ if [ ! -d "/root/.ollama/models/${MODEL_NAME}" ]; then
 fi
 
 # Serve the web UI files and start the Ollama service
-bashio::log.info "Ollama service starting on static port 11434..."
+bashio::log.info "Ollama service starting on static port 11435..."
 
 # Combine serving the web UI and starting Ollama service
 ollama serve --port=11434 --static-path=/usr/share/ollama/webui
